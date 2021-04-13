@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
     max-width: 320px;
@@ -8,8 +9,13 @@ body {
     height: 100vh;
     background-color: #fafafa;
     font-family: 'Open Sans', sans-serif;
+
 }
 
+header {
+    color: rgb(107, 107, 107);
+    background-color: rgb(224, 224, 224);
+}
 
 .navbar {
 
@@ -17,6 +23,13 @@ body {
     margin-left: 15px;
     font-size: 1.1rem;
     
+    
+}
+
+.nav-links {
+
+    color: rgb(107, 107, 107);
+    background-color: #ffffff;
 }
 
 .navbar .nav-links{
@@ -26,6 +39,7 @@ body {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+    color: rgb(107, 107, 107);
     background-color: #ffffff;
     
 }
@@ -33,19 +47,21 @@ body {
 .container {
 
     margin-top: 40px;
-}
-
-.container2 {
-
-    background-color: #ffffff;
-
-}
-
-#container-items {
-
-    background-color: #ffffff;
-    padding-bottom: 30px;
     
+}
+
+
+#container-item {
+
+    background-color: lightgray;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+#portfolio {
+
+    background-color: lightgray;
 
 }
 
@@ -60,7 +76,7 @@ img {
     height: auto;
   }
 
-#contact {
+.bottom-box {
 
     background-color: #fafafa;
     
@@ -97,6 +113,12 @@ a:hover {
     background-color: #fed36e;
 }
 
+p {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 h1 {
 
     font-weight: bold;
@@ -108,6 +130,7 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
+    
     background-color: #ffffff
 
 }
@@ -134,7 +157,15 @@ footer {
     padding-top: 20px;
     display: inline-flex;
     border-top: 1px solid grey;
+    color: rgb(107, 107, 107);
+    background-color: rgb(224, 224, 224);
     
+}
+
+#top-link {
+
+    color: rgb(107, 107, 107);
+    background-color: #ffffff;
 }
 
 .foot-navbar {
@@ -143,6 +174,9 @@ footer {
     margin-left: -140px;
     
 }
+
+
+
 
 /* width 768px media screen */
 
@@ -226,7 +260,6 @@ footer {
 
 .foot-navbar {
     
-    align-items: right;
     text-align: right;
     visibility: visible;
     margin-right: -425px;
@@ -237,6 +270,44 @@ footer {
 #top-link {
 
     visibility: hidden;
+   
     
 }
+}
+
+/* width 1024px media screen */
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+    
+            min-width: 1024px;
+            text-align: center;
+              
+    }
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container2 {
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: .5rem;
+    
+    }
+
+    .foot-navbar {
+    
+        text-align: right;
+        visibility: visible;
+        margin-right: -690px;
+        margin-left: 0;
+        
+    }
+   
 }
